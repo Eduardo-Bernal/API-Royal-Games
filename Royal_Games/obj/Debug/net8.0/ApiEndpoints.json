@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Royal_Games.Controllers.AutenticacaoController",
+    "Method": "Login",
+    "RelativePath": "api/Autenticacao/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Royal_Games.DTOs.AutenticacaoDto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Royal_Games.Controllers.UsuarioController",
     "Method": "Listar",
     "RelativePath": "api/Usuario",
