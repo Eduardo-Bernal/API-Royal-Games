@@ -57,6 +57,7 @@ namespace Royal_Games.Applications.Services
             {
                 throw new DomainException("O jogo deve ter ao menos um genero");
             }
+        }
 
             public byte[] ObterImagem(int id)
         {
@@ -73,16 +74,16 @@ namespace Royal_Games.Applications.Services
         {
             ValidarCadastro(jogoDto);
 
-            if(_repository.NomeExiste(jogoDto.Nome)
+            if(_repository.NomeExiste(jogoDto.Nome))
             {
                 throw new DomainException("Jogo já existe");
             }
 
             Jogo jogo = new Jogo
             {
-                Nome = jogo.Nome,
-                Preco = jogo.Preco,
-                Descricao = jogo.Descricao,
+                Nome = jogoDto.Nome,
+                Preco =jogoDto.Preco,
+                Descricao = jogoDto.Descricao,
                 Imagem = ImagemParaBytes.ConverterImagem(jogoDto.Imagem),
                 StatusJogo = true,
                 UsuarioID = usuarioId
@@ -102,7 +103,7 @@ namespace Royal_Games.Applications.Services
             {
                 throw new DomainException("Jogo não encontrado.");
             }
-            if(_repository.NomeExiste(jogoDto.Nome, JogoIdAtual:id)
+            if(_repository.NomeExiste(jogoDto.Nome, JogoIdAtual:id))
             {
                 throw new DomainException("Já existe outro produto com esse nome");
             }
