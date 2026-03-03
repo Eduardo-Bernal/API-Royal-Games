@@ -5,12 +5,6 @@
     "version": "1.0"
   },
   "paths": {
-<<<<<<< HEAD
-    "/api/Jogo": {
-      "get": {
-        "tags": [
-          "Jogo"
-=======
     "/api/Autenticacao/login": {
       "post": {
         "tags": [
@@ -42,11 +36,10 @@
         }
       }
     },
-    "/api/Usuario": {
+    "/api/Jogo": {
       "get": {
         "tags": [
-          "Usuario"
->>>>>>> Usuarios
+          "Jogo"
         ],
         "responses": {
           "200": {
@@ -56,11 +49,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-<<<<<<< HEAD
                     "$ref": "#/components/schemas/LerJogoDto"
-=======
-                    "$ref": "#/components/schemas/LerUsuarioDto"
->>>>>>> Usuarios
                   }
                 }
               },
@@ -68,11 +57,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-<<<<<<< HEAD
                     "$ref": "#/components/schemas/LerJogoDto"
-=======
-                    "$ref": "#/components/schemas/LerUsuarioDto"
->>>>>>> Usuarios
                   }
                 }
               },
@@ -80,11 +65,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-<<<<<<< HEAD
                     "$ref": "#/components/schemas/LerJogoDto"
-=======
-                    "$ref": "#/components/schemas/LerUsuarioDto"
->>>>>>> Usuarios
                   }
                 }
               }
@@ -94,7 +75,6 @@
       },
       "post": {
         "tags": [
-<<<<<<< HEAD
           "Jogo"
         ],
         "requestBody": {
@@ -142,7 +122,215 @@
                 "generoIds": {
                   "style": "form"
                 }
-=======
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Jogo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Jogo/{id}": {
+      "get": {
+        "tags": [
+          "Jogo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LerJogoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LerJogoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LerJogoDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Jogo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Nome": {
+                    "type": "string"
+                  },
+                  "Preco": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Descricao": {
+                    "type": "string"
+                  },
+                  "Imagem": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "generoIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  },
+                  "StatusJogo": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "encoding": {
+                "Nome": {
+                  "style": "form"
+                },
+                "Preco": {
+                  "style": "form"
+                },
+                "Descricao": {
+                  "style": "form"
+                },
+                "Imagem": {
+                  "style": "form"
+                },
+                "generoIds": {
+                  "style": "form"
+                },
+                "StatusJogo": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Jogo/{id}/imagem": {
+      "get": {
+        "tags": [
+          "Jogo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LerUsuarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LerUsuarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LerUsuarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
           "Usuario"
         ],
         "requestBody": {
@@ -160,16 +348,12 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/CriarUsuarioDto"
->>>>>>> Usuarios
               }
             }
           }
         },
         "responses": {
           "200": {
-<<<<<<< HEAD
-            "description": "OK"
-=======
             "description": "OK",
             "content": {
               "text/plain": {
@@ -285,27 +469,18 @@
                 }
               }
             }
->>>>>>> Usuarios
           }
         }
       },
       "delete": {
         "tags": [
-<<<<<<< HEAD
-          "Jogo"
-=======
           "Usuario"
->>>>>>> Usuarios
         ],
         "parameters": [
           {
             "name": "id",
-<<<<<<< HEAD
-            "in": "query",
-=======
             "in": "path",
             "required": true,
->>>>>>> Usuarios
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -319,21 +494,6 @@
         }
       }
     },
-<<<<<<< HEAD
-    "/api/Jogo/{id}": {
-      "get": {
-        "tags": [
-          "Jogo"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-=======
     "/api/Usuario/email/{email}": {
       "get": {
         "tags": [
@@ -346,7 +506,6 @@
             "required": true,
             "schema": {
               "type": "string"
->>>>>>> Usuarios
             }
           }
         ],
@@ -356,147 +515,27 @@
             "content": {
               "text/plain": {
                 "schema": {
-<<<<<<< HEAD
-                  "$ref": "#/components/schemas/LerJogoDto"
-=======
                   "$ref": "#/components/schemas/LerUsuarioDto"
->>>>>>> Usuarios
                 }
               },
               "application/json": {
                 "schema": {
-<<<<<<< HEAD
-                  "$ref": "#/components/schemas/LerJogoDto"
-=======
                   "$ref": "#/components/schemas/LerUsuarioDto"
->>>>>>> Usuarios
                 }
               },
               "text/json": {
                 "schema": {
-<<<<<<< HEAD
-                  "$ref": "#/components/schemas/LerJogoDto"
-=======
                   "$ref": "#/components/schemas/LerUsuarioDto"
->>>>>>> Usuarios
                 }
               }
             }
           }
         }
-<<<<<<< HEAD
-      },
-      "post": {
-        "tags": [
-          "Jogo"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "Nome": {
-                    "type": "string"
-                  },
-                  "Preco": {
-                    "type": "number",
-                    "format": "double"
-                  },
-                  "Descricao": {
-                    "type": "string"
-                  },
-                  "Imagem": {
-                    "type": "string",
-                    "format": "binary"
-                  },
-                  "generoIds": {
-                    "type": "array",
-                    "items": {
-                      "type": "integer",
-                      "format": "int32"
-                    }
-                  },
-                  "StatusJogo": {
-                    "type": "boolean"
-                  }
-                }
-              },
-              "encoding": {
-                "Nome": {
-                  "style": "form"
-                },
-                "Preco": {
-                  "style": "form"
-                },
-                "Descricao": {
-                  "style": "form"
-                },
-                "Imagem": {
-                  "style": "form"
-                },
-                "generoIds": {
-                  "style": "form"
-                },
-                "StatusJogo": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Jogo/{id}/imagem": {
-      "get": {
-        "tags": [
-          "Jogo"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-=======
->>>>>>> Usuarios
       }
     }
   },
   "components": {
     "schemas": {
-<<<<<<< HEAD
-      "LerJogoDto": {
-        "type": "object",
-        "properties": {
-          "jogoID": {
-=======
       "CriarUsuarioDto": {
         "type": "object",
         "properties": {
@@ -515,11 +554,10 @@
         },
         "additionalProperties": false
       },
-      "LerUsuarioDto": {
+      "LerJogoDto": {
         "type": "object",
         "properties": {
-          "usuarioID": {
->>>>>>> Usuarios
+          "jogoID": {
             "type": "integer",
             "format": "int32"
           },
@@ -527,7 +565,6 @@
             "type": "string",
             "nullable": true
           },
-<<<<<<< HEAD
           "preco": {
             "type": "number",
             "format": "double"
@@ -570,7 +607,32 @@
             "nullable": true
           },
           "usuarioEmail": {
-=======
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "statusUsuario": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LerUsuarioDto": {
+        "type": "object",
+        "properties": {
+          "usuarioID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
           "email": {
             "type": "string",
             "nullable": true
@@ -585,29 +647,16 @@
         "type": "object",
         "properties": {
           "email": {
->>>>>>> Usuarios
             "type": "string",
             "nullable": true
           },
           "senha": {
             "type": "string",
-<<<<<<< HEAD
-            "format": "byte",
-            "nullable": true
-          },
-          "statusUsuario": {
-            "type": "boolean",
-=======
->>>>>>> Usuarios
             "nullable": true
           }
         },
         "additionalProperties": false
       }
-<<<<<<< HEAD
-    }
-  }
-=======
     },
     "securitySchemes": {
       "Bearer": {
@@ -623,5 +672,4 @@
       "Bearer": [ ]
     }
   ]
->>>>>>> Usuarios
 }

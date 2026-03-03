@@ -1,10 +1,5 @@
 [
   {
-<<<<<<< HEAD
-    "ContainingType": "Royal_Games.Controllers.JogoController",
-    "Method": "Listar",
-    "RelativePath": "api/Jogo",
-=======
     "ContainingType": "Royal_Games.Controllers.AutenticacaoController",
     "Method": "Login",
     "RelativePath": "api/Autenticacao/login",
@@ -21,21 +16,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Royal_Games.Controllers.UsuarioController",
+    "ContainingType": "Royal_Games.Controllers.JogoController",
     "Method": "Listar",
-    "RelativePath": "api/Usuario",
->>>>>>> Usuarios
+    "RelativePath": "api/Jogo",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
         "Type": "System.Collections.Generic.List\u00601[[Royal_Games.DTOs.JogoDTOs.LerJogoDto, Royal_Games, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-=======
-        "Type": "System.Collections.Generic.List\u00601[[Royal_Games.DTOs.UsuarioDto.LerUsuarioDto, Royal_Games, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
->>>>>>> Usuarios
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,21 +36,14 @@
     ]
   },
   {
-<<<<<<< HEAD
     "ContainingType": "Royal_Games.Controllers.JogoController",
     "Method": "Adicionar",
     "RelativePath": "api/Jogo",
-=======
-    "ContainingType": "Royal_Games.Controllers.UsuarioController",
-    "Method": "Adicionar",
-    "RelativePath": "api/Usuario",
->>>>>>> Usuarios
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
         "Name": "Nome",
         "Type": "System.String",
         "IsRequired": false
@@ -92,7 +75,135 @@
     "ContainingType": "Royal_Games.Controllers.JogoController",
     "Method": "Remover",
     "RelativePath": "api/Jogo",
-=======
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Royal_Games.Controllers.JogoController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/Jogo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Royal_Games.DTOs.JogoDTOs.LerJogoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Royal_Games.Controllers.JogoController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Jogo/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Preco",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descricao",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imagem",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "generoIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "StatusJogo",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Royal_Games.Controllers.JogoController",
+    "Method": "ObterImagem",
+    "RelativePath": "api/Jogo/{id}/imagem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Royal_Games.Controllers.UsuarioController",
+    "Method": "Listar",
+    "RelativePath": "api/Usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Royal_Games.DTOs.UsuarioDto.LerUsuarioDto, Royal_Games, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Royal_Games.Controllers.UsuarioController",
+    "Method": "Adicionar",
+    "RelativePath": "api/Usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
         "Name": "criarUsuarioDto",
         "Type": "Royal_Games.DTOs.UsuarioDto.CriarUsuarioDto",
         "IsRequired": true
@@ -171,7 +282,6 @@
     "ContainingType": "Royal_Games.Controllers.UsuarioController",
     "Method": "Remover",
     "RelativePath": "api/Usuario/{id}",
->>>>>>> Usuarios
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -179,47 +289,28 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-<<<<<<< HEAD
-        "IsRequired": false
-=======
         "IsRequired": true
->>>>>>> Usuarios
       }
     ],
     "ReturnTypes": []
   },
   {
-<<<<<<< HEAD
-    "ContainingType": "Royal_Games.Controllers.JogoController",
-    "Method": "ObterPorId",
-    "RelativePath": "api/Jogo/{id}",
-=======
     "ContainingType": "Royal_Games.Controllers.UsuarioController",
     "Method": "ObterPorEmail",
     "RelativePath": "api/Usuario/email/{email}",
->>>>>>> Usuarios
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-<<<<<<< HEAD
-        "Name": "id",
-        "Type": "System.Int32",
-=======
         "Name": "email",
         "Type": "System.String",
->>>>>>> Usuarios
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-<<<<<<< HEAD
-        "Type": "Royal_Games.DTOs.JogoDTOs.LerJogoDto",
-=======
         "Type": "Royal_Games.DTOs.UsuarioDto.LerUsuarioDto",
->>>>>>> Usuarios
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -228,70 +319,5 @@
         "StatusCode": 200
       }
     ]
-<<<<<<< HEAD
-  },
-  {
-    "ContainingType": "Royal_Games.Controllers.JogoController",
-    "Method": "Atualizar",
-    "RelativePath": "api/Jogo/{id}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "Nome",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Preco",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "Descricao",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Imagem",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "generoIds",
-        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "StatusJogo",
-        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Royal_Games.Controllers.JogoController",
-    "Method": "ObterImagem",
-    "RelativePath": "api/Jogo/{id}/imagem",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-=======
->>>>>>> Usuarios
   }
 ]
