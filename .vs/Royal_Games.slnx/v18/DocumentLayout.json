@@ -83,8 +83,7 @@
               "RelativeToolTip": "Royal_Games\\Domains\\Genero.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:46:28.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:46:28.714Z"
             },
             {
               "$type": "Document",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "Royal_Games\\Domains\\ClassificacaoIndicativa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:46:27.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:46:27.665Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "Royal_Games\\Domains\\Jogo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:38:08.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:38:08.68Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "Royal_Games\\DTOs\\JogoDTOs\\CriarJogoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:37:58.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:37:58.487Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "Royal_Games\\Applications\\Services\\JogoService.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAcwFQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:36:26.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:36:26.43Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "Royal_Games\\DTOs\\JogoDTOs\\LerJogoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:36:07.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:36:07.319Z"
             },
             {
               "$type": "Document",
@@ -161,8 +155,7 @@
               "RelativeToolTip": "Royal_Games\\Applications\\Conversoes\\ConverterParaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:35:25.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:35:25.605Z"
             },
             {
               "$type": "Document",
@@ -174,8 +167,7 @@
               "RelativeToolTip": "Royal_Games\\Controllers\\JogoController.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAQwHEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:34:38.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:34:38.98Z"
             },
             {
               "$type": "Document",
@@ -187,8 +179,7 @@
               "RelativeToolTip": "Royal_Games\\Applications\\Autenticacao\\GeradorTokenJwt.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:02:54.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:02:54.31Z"
             },
             {
               "$type": "Document",
@@ -200,8 +191,7 @@
               "RelativeToolTip": "Royal_Games\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-03T11:56:51.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T11:56:51.159Z"
             },
             {
               "$type": "Document",
@@ -213,8 +203,7 @@
               "RelativeToolTip": "Royal_Games\\Program.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAtwGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T11:54:01.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T11:54:01.802Z"
             }
           ]
         }
