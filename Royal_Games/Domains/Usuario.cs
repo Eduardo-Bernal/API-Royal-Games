@@ -15,5 +15,5 @@ public partial class Usuario
 
     public bool? StatusUsuario { get; set; }
 
-    public virtual ICollection<Jogo> Jogo { get; set; } = new List<Jogo>();
+    public virtual ICollection<Jogo> Jogos { get; set; } = new List<Jogo>();
 }

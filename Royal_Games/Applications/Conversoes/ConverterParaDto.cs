@@ -1,7 +1,6 @@
 ﻿using Royal_Games.Domains;
 using Royal_Games.DTOs.JogoDTOs;
-using VHBurguer.Domains;
-using VHBurguer.DTOs.JogoDTO;
+
 
 namespace VHBurguer.Applications.Conversoes
 {
@@ -17,9 +16,9 @@ namespace VHBurguer.Applications.Conversoes
                 Descricao = jogo.Descricao,
                 StatusJogo = jogo.StatusJogo,
 
-                GeneroIds = jogo.Genero.Select(genero => genero.GeneroID).ToList(),
+                GeneroIds = jogo.Generos.Select(genero => genero.GeneroID).ToList(),
 
-                Generos = jogo.Genero.Select(genero => genero.Nome).ToList(),
+                Generos = jogo.Generos.Select(genero => genero.Nome).ToList(),
 
                 UsuarioID = jogo.UsuarioID,
                 UsuarioNome = jogo.Usuario.Nome,

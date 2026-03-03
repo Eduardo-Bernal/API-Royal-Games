@@ -14,31 +14,31 @@ namespace Royal_Games.Repositories
         }
         public List<Usuario> Listar()
         {
-            return _context.Usuario.ToList();
+            return _context.Usuarios.ToList();
         }
 
         public Usuario? ObterPorId(int id)
         {
-            return _context.Usuario.Find(id);
+            return _context.Usuarios.Find(id);
         }
         public Usuario? ObterPorEmail(string email)
         {
-            return _context.Usuario.FirstOrDefault(usuario => usuario.Email == email);
+            return _context.Usuarios.FirstOrDefault(usuario => usuario.Email == email);
         }
         public bool EmailExiste(string email)
         {
-            return _context.Usuario.Any(usuario => usuario.Email == email);
+            return _context.Usuarios.Any(usuario => usuario.Email == email);
         }
 
         public void Adicionar(Usuario usuario)
         {
-            _context.Usuario.Add(usuario);
+            _context.Usuarios.Add(usuario);
             _context.SaveChanges();
         }
 
         public void Atualizar(Usuario usuario)
         {
-            Usuario? usuarioBanco = _context.Usuario.FirstOrDefault(usuarioAux => usuarioAux.UsuarioID == usuario.UsuarioID);
+            Usuario? usuarioBanco = _context.Usuarios.FirstOrDefault(usuarioAux => usuarioAux.UsuarioID == usuario.UsuarioID);
 
             if (usuarioBanco == null) return;
 
@@ -51,11 +51,11 @@ namespace Royal_Games.Repositories
 
         public void Remover(int id)
         {
-            Usuario? usuario = _context.Usuario.FirstOrDefault(usuarioAux => usuarioAux.UsuarioID == id);
+            Usuario? usuario = _context.Usuarios.FirstOrDefault(usuarioAux => usuarioAux.UsuarioID == id);
 
             if (usuario == null) return;
 
-            _context.Usuario.Remove(usuario);
+            _context.Usuarios.Remove(usuario);
             _context.SaveChanges();
         }
     }
