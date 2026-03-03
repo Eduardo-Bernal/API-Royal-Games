@@ -82,11 +82,7 @@ namespace Royal_Games.Applications.Services
             Jogo jogo = new Jogo
             {
                 Nome = jogoDto.Nome,
-<<<<<<< HEAD
                 Preco =jogoDto.Preco,
-=======
-                Preco = jogoDto.Preco,
->>>>>>> Usuarios
                 Descricao = jogoDto.Descricao,
                 Imagem = ImagemParaBytes.ConverterImagem(jogoDto.Imagem),
                 StatusJogo = true,

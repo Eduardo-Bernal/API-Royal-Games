@@ -1,9 +1,5 @@
 ﻿using Royal_Games.Domains;
 using Royal_Games.DTOs.JogoDTOs;
-<<<<<<< HEAD
-=======
-
->>>>>>> Usuarios
 
 namespace VHBurguer.Applications.Conversoes
 {

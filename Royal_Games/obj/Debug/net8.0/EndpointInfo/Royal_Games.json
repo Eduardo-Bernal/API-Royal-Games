@@ -610,14 +610,6 @@
             "type": "string",
             "nullable": true
           },
-<<<<<<< HEAD
-=======
-          "senha": {
-            "type": "string",
-            "format": "byte",
-            "nullable": true
-          },
->>>>>>> Usuarios
           "statusUsuario": {
             "type": "boolean",
             "nullable": true
