@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\dtos\\jogodtos\\lerjogodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\dtos\\jogodtos\\lerjogodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\contexts\\royal_gamescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\contexts\\royal_gamescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\applications\\conversoes\\converterparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\applications\\conversoes\\converterparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\interfaces\\ijogorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\interfaces\\ijogorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\repositories\\jogorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\repositories\\jogorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\contexts\\royal_gamescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\contexts\\royal_gamescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\applications\\conversoes\\converterparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\applications\\conversoes\\converterparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\applications\\services\\jogoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\applications\\services\\jogoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|solutionrelative:royal_games\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6159F9E-8936-60A8-6107-B09E5E3F6391}|Royal_Games\\Royal_Games.csproj|c:\\users\\53450061801\\desktop\\royalgames\\api-royal-games\\royal_games\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +54,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "LerJogoDto.cs",
+              "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\DTOs\\JogoDTOs\\LerJogoDto.cs",
+              "RelativeDocumentMoniker": "Royal_Games\\DTOs\\JogoDTOs\\LerJogoDto.cs",
+              "ToolTip": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\DTOs\\JogoDTOs\\LerJogoDto.cs",
+              "RelativeToolTip": "Royal_Games\\DTOs\\JogoDTOs\\LerJogoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T12:50:21.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IJogoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\Interfaces\\IJogoRepository.cs",
+              "RelativeDocumentMoniker": "Royal_Games\\Interfaces\\IJogoRepository.cs",
+              "ToolTip": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\Interfaces\\IJogoRepository.cs",
+              "RelativeToolTip": "Royal_Games\\Interfaces\\IJogoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T12:50:07.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Royal_Games\\appsettings.Development.json",
@@ -58,12 +92,11 @@
               "RelativeToolTip": "Royal_Games\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-03T12:04:49.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T12:04:49.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\appsettings.json",
               "RelativeDocumentMoniker": "Royal_Games\\appsettings.json",
@@ -76,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "JogoRepository.cs",
               "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\Repositories\\JogoRepository.cs",
               "RelativeDocumentMoniker": "Royal_Games\\Repositories\\JogoRepository.cs",
@@ -102,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Royal_GamesContext.cs",
               "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\Contexts\\Royal_GamesContext.cs",
               "RelativeDocumentMoniker": "Royal_Games\\Contexts\\Royal_GamesContext.cs",
@@ -115,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DomainException.cs",
               "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\Exceptions\\DomainException.cs",
               "RelativeDocumentMoniker": "Royal_Games\\Exceptions\\DomainException.cs",
@@ -123,12 +156,11 @@
               "RelativeToolTip": "Royal_Games\\Exceptions\\DomainException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T11:43:51.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T11:43:51.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "JogoService.cs",
               "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\Applications\\Services\\JogoService.cs",
               "RelativeDocumentMoniker": "Royal_Games\\Applications\\Services\\JogoService.cs",
@@ -141,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ConverterParaDto.cs",
               "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\Applications\\Conversoes\\ConverterParaDto.cs",
               "RelativeDocumentMoniker": "Royal_Games\\Applications\\Conversoes\\ConverterParaDto.cs",
@@ -154,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\53450061801\\Desktop\\RoyalGames\\API-Royal-Games\\Royal_Games\\Program.cs",
               "RelativeDocumentMoniker": "Royal_Games\\Program.cs",
