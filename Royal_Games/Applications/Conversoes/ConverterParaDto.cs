@@ -1,7 +1,5 @@
 ﻿using Royal_Games.Domains;
 using Royal_Games.DTOs.JogoDTOs;
-using VHBurguer.Domains;
-using VHBurguer.DTOs.JogoDTO;
 
 namespace VHBurguer.Applications.Conversoes
 {
