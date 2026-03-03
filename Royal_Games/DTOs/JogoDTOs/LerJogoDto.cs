@@ -3,7 +3,7 @@
     public class LerJogoDto
     {
         public int JogoID { get; set; }
-        public string Nome { get; set; }
+        public string Nome { get; set; } = null!;
 
         public decimal Preco { get; set; }
 
@@ -23,8 +23,5 @@
 
         public string UsuarioEmail { get; set; } = null!;
 
-        public byte[] Senha { get; set; } = null!;
-
-        public bool? StatusUsuario { get; set; }
     }
 }

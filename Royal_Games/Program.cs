@@ -48,6 +48,9 @@ builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<GeradorTokenJwt>();
 builder.Services.AddScoped<AutenticacaoService>();
 
+builder.Services.AddScoped<IJogoRepository, JogoRepository>();
+builder.Services.AddScoped<JogoService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

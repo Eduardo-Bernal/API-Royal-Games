@@ -96,9 +96,8 @@ namespace Royal_Games.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         [Authorize]
-
         public ActionResult Remover(int id)
         {
             try

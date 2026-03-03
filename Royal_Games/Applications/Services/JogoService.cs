@@ -19,7 +19,7 @@ namespace Royal_Games.Applications.Services
 
         public List<LerJogoDto> Listar()
         {
-            List<Jogo> jogos = _repository.Listar();
+            List<Jogo> jogos = _repository.Listar() ?? new List<Jogo>();
             List<LerJogoDto> jogosDto = jogos.Select(JogoParaDto.ConverterParaDto).ToList();
             return jogosDto;
         }

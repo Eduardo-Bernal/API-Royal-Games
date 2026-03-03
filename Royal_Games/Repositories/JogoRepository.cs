@@ -16,18 +16,24 @@ namespace Royal_Games.Repositories
 
         public List<Jogo> Listar()
         {
-            List<Jogo> jogos = _context.Jogo.Include(jogo => jogo.Genero).ToList();
+            List<Jogo> jogos = _context.Jogo
+                .Include(jogo => jogo.Genero)
+                .Include(jogo => jogo.ClassificacaoIndicativa)
+                .Include(jogo => jogo.Usuario)
+                .Include(jogo => jogo.Plataforma)
+                .ToList();
+
             return jogos;
         }
 
         public Jogo ObterPorID(int id)
         {
-            Jogo? jogo = _context.Jogo.
-                Include(jogoDb => jogoDb.Genero).
-                Include(jogoDb => jogoDb.ClassificacaoIndicativa).
-                Include(jogoDb => jogoDb.Usuario).
-                Include(jogoDb => jogoDb.Plataforma).
-                FirstOrDefault(jogoDb => jogoDb.JogoID == id);
+            Jogo? jogo = _context.Jogo
+                .Include(jogoDb => jogoDb.Genero)
+                .Include(jogoDb => jogoDb.ClassificacaoIndicativa)
+                .Include(jogoDb => jogoDb.Usuario)
+                .Include(jogoDb => jogoDb.Plataforma)
+                .FirstOrDefault(jogoDb => jogoDb.JogoID == id);
 
             return jogo;
         }
@@ -91,7 +97,9 @@ namespace Royal_Games.Repositories
                 jogoBanco.StatusJogo = jogo.StatusJogo;
             }
 
-            var generos = _context.Genero.Where(genero => generoIds.Contains(genero.GeneroID)).ToList();
+            var generos = _context.Genero
+                .Where(genero => generoIds.Contains(genero.GeneroID))
+                .ToList();
 
             jogoBanco.Genero.Clear();
 
@@ -102,13 +110,12 @@ namespace Royal_Games.Repositories
 
             _context.SaveChanges();
         }
-        
 
         public void Remover(int id)
         {
             Jogo? jogo = _context.Jogo.FirstOrDefault(jogo => jogo.JogoID == id);
 
-            if(jogo != null)
+            if (jogo == null)
             {
                 return;
             }
@@ -116,6 +123,5 @@ namespace Royal_Games.Repositories
             _context.Jogo.Remove(jogo);
             _context.SaveChanges();
         }
-
     }
 }
