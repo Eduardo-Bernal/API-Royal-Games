@@ -23,8 +23,6 @@
 
         public string UsuarioEmail { get; set; } = null!;
 
-        public byte[] Senha { get; set; } = null!;
-
         public bool? StatusUsuario { get; set; }
     }
 }
