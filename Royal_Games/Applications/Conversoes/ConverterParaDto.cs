@@ -15,13 +15,12 @@ namespace VHBurguer.Applications.Conversoes
                 Descricao = jogo.Descricao,
                 StatusJogo = jogo.StatusJogo,
 
-                GeneroIds = jogo.Genero.Select(genero => genero.GeneroID).ToList(),
-
-                Generos = jogo.Genero.Select(genero => genero.Nome).ToList(),
+                GeneroIds = jogo.Genero?.Select(g => g.GeneroID).ToList() ?? new List<int>(),
+                Generos = jogo.Genero?.Select(g => g.Nome).ToList() ?? new List<string>(),
 
                 UsuarioID = jogo.UsuarioID,
-                UsuarioNome = jogo.Usuario.Nome,
-                UsuarioEmail = jogo.Usuario.Email
+                UsuarioNome = jogo.Usuario?.Nome,
+                UsuarioEmail = jogo.Usuario?.Email
             };
         }
     }

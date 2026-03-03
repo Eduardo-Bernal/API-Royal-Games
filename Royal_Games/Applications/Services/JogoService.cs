@@ -74,7 +74,7 @@ namespace Royal_Games.Applications.Services
         {
             ValidarCadastro(jogoDto);
 
-            if(_repository.NomeExiste(jogoDto.Nome))
+            if (_repository.NomeExiste(jogoDto.Nome))
             {
                 throw new DomainException("Jogo já existe");
             }
@@ -90,7 +90,10 @@ namespace Royal_Games.Applications.Services
             };
 
             _repository.Cadastrar(jogo, jogoDto.generoIds);
-            return JogoParaDto.ConverterParaDto(jogo);
+
+            Jogo jogoCompleto = _repository.ObterPorID(jogo.JogoID);
+
+            return JogoParaDto.ConverterParaDto(jogoCompleto);
         }
 
         public LerJogoDto Atualizar(int id, AtualizarJogoDto jogoDto)
