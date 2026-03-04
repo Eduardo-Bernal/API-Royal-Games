@@ -23,11 +23,11 @@ public partial class Jogo
 
     public virtual ClassificacaoIndicativa? ClassificacaoIndicativa { get; set; }
 
-    public virtual ICollection<Log_AlteracaoJogo> Log_AlteracaoJogo { get; set; } = new List<Log_AlteracaoJogo>();
+    public virtual ICollection<Log_AlteracaoJogo> Log_AlteracaoJogos { get; set; } = new List<Log_AlteracaoJogo>();
 
     public virtual Usuario Usuario { get; set; }
 
-    public virtual ICollection<Genero> Genero { get; set; } = new List<Genero>();
+    public virtual ICollection<Genero> Generos { get; set; } = new List<Genero>();
 
-    public virtual ICollection<Plataforma> Plataforma { get; set; } = new List<Plataforma>();
+    public virtual ICollection<Plataforma> Plataformas { get; set; } = new List<Plataforma>();
 }

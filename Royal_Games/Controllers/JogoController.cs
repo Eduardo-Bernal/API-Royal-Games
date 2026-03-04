@@ -53,8 +53,12 @@ namespace Royal_Games.Controllers
         {
             try
             {
-                var Imagem = _service.ObterImagem(id);
-                return File(Imagem, "image/jpeg");
+                var imagem = _service.ObterImagem(id);
+
+                if (imagem == null) 
+                    return NotFound();
+
+                return File(imagem, "image/jpeg");
             }
             catch (DomainException ex)
             {
@@ -79,7 +83,7 @@ namespace Royal_Games.Controllers
             }
         }
 
-        [HttpPost("{id}")]
+        [HttpPut("{id}")]
         [Consumes("multipart/form-data")]
         [Authorize]
 

@@ -9,8 +9,6 @@
 
         public string Descricao { get; set; } = null!;
 
-        public byte[] Imagem { get; set; } = null!;
-
         public bool? StatusJogo { get; set; }
 
         public List<int> GeneroIds { get; set; } = new();
@@ -23,5 +21,9 @@
 
         public string UsuarioEmail { get; set; } = null!;
 
+<<<<<<< HEAD
+=======
+        public bool? StatusUsuario { get; set; }
+>>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
     }
 }

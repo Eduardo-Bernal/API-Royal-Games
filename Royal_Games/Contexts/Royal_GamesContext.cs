@@ -16,17 +16,17 @@ public partial class Royal_GamesContext : DbContext
     {
     }
 
-    public virtual DbSet<ClassificacaoIndicativa> ClassificacaoIndicativa { get; set; }
+    public virtual DbSet<ClassificacaoIndicativa> ClassificacaoIndicativas { get; set; }
 
-    public virtual DbSet<Genero> Genero { get; set; }
+    public virtual DbSet<Genero> Generos { get; set; }
 
-    public virtual DbSet<Jogo> Jogo { get; set; }
+    public virtual DbSet<Jogo> Jogos { get; set; }
 
-    public virtual DbSet<Log_AlteracaoJogo> Log_AlteracaoJogo { get; set; }
+    public virtual DbSet<Log_AlteracaoJogo> Log_AlteracaoJogos { get; set; }
 
-    public virtual DbSet<Plataforma> Plataforma { get; set; }
+    public virtual DbSet<Plataforma> Plataformas { get; set; }
 
-    public virtual DbSet<Usuario> Usuario { get; set; }
+    public virtual DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -36,7 +36,9 @@ public partial class Royal_GamesContext : DbContext
     {
         modelBuilder.Entity<ClassificacaoIndicativa>(entity =>
         {
-            entity.HasKey(e => e.ClassificacaoIndicativaID).HasName("PK__Classifi__892DEC6F81A7D1D6");
+            entity.HasKey(e => e.ClassificacaoIndicativaID).HasName("PK__Classifi__892DEC6FFCCC3DA3");
+
+            entity.ToTable("ClassificacaoIndicativa");
 
             entity.Property(e => e.Classificacao)
                 .HasMaxLength(50)
@@ -45,7 +47,9 @@ public partial class Royal_GamesContext : DbContext
 
         modelBuilder.Entity<Genero>(entity =>
         {
-            entity.HasKey(e => e.GeneroID).HasName("PK__Genero__A99D026844AA0238");
+            entity.HasKey(e => e.GeneroID).HasName("PK__Genero__A99D026808D1FFAC");
+
+            entity.ToTable("Genero");
 
             entity.Property(e => e.Nome)
                 .HasMaxLength(50)
@@ -54,15 +58,15 @@ public partial class Royal_GamesContext : DbContext
 
         modelBuilder.Entity<Jogo>(entity =>
         {
-            entity.HasKey(e => e.JogoID).HasName("PK__Jogo__59196855987E670D");
+            entity.HasKey(e => e.JogoID).HasName("PK__Jogo__591968551B5B7E8D");
 
-            entity.ToTable(tb =>
+            entity.ToTable("Jogo", tb =>
                 {
                     tb.HasTrigger("trg_AlteracaoJogo");
                     tb.HasTrigger("trg_ExclusaoJogo");
                 });
 
-            entity.HasIndex(e => e.Nome, "UQ__Jogo__7D8FE3B20C073EA1").IsUnique();
+            entity.HasIndex(e => e.Nome, "UQ__Jogo__7D8FE3B2C15C8749").IsUnique();
 
             entity.Property(e => e.Nome)
                 .HasMaxLength(100)
@@ -70,15 +74,15 @@ public partial class Royal_GamesContext : DbContext
             entity.Property(e => e.Preco).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.StatusJogo).HasDefaultValue(true);
 
-            entity.HasOne(d => d.ClassificacaoIndicativa).WithMany(p => p.Jogo)
+            entity.HasOne(d => d.ClassificacaoIndicativa).WithMany(p => p.Jogos)
                 .HasForeignKey(d => d.ClassificacaoIndicativaID)
                 .HasConstraintName("FK__Jogo__Classifica__534D60F1");
 
-            entity.HasOne(d => d.Usuario).WithMany(p => p.Jogo)
+            entity.HasOne(d => d.Usuario).WithMany(p => p.Jogos)
                 .HasForeignKey(d => d.UsuarioID)
                 .HasConstraintName("FK__Jogo__UsuarioID__52593CB8");
 
-            entity.HasMany(d => d.Genero).WithMany(p => p.Jogo)
+            entity.HasMany(d => d.Generos).WithMany(p => p.Jogos)
                 .UsingEntity<Dictionary<string, object>>(
                     "JogoGenero",
                     r => r.HasOne<Genero>().WithMany()
@@ -90,12 +94,15 @@ public partial class Royal_GamesContext : DbContext
                     j =>
                     {
                         j.HasKey("JogoID", "GeneroID");
+                        j.ToTable("JogoGenero");
                     });
         });
 
         modelBuilder.Entity<Log_AlteracaoJogo>(entity =>
         {
-            entity.HasKey(e => e.Log_AlteracaoJogoID).HasName("PK__Log_Alte__BB9D2C4F58E772A9");
+            entity.HasKey(e => e.Log_AlteracaoJogoID).HasName("PK__Log_Alte__BB9D2C4F9563F44A");
+
+            entity.ToTable("Log_AlteracaoJogo");
 
             entity.Property(e => e.DataAlteracao).HasPrecision(0);
             entity.Property(e => e.NomeAnterior)
@@ -103,20 +110,22 @@ public partial class Royal_GamesContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.PrecoAnterior).HasColumnType("decimal(10, 2)");
 
-            entity.HasOne(d => d.Jogo).WithMany(p => p.Log_AlteracaoJogo)
+            entity.HasOne(d => d.Jogo).WithMany(p => p.Log_AlteracaoJogos)
                 .HasForeignKey(d => d.JogoID)
                 .HasConstraintName("FK__Log_Alter__JogoI__619B8048");
         });
 
         modelBuilder.Entity<Plataforma>(entity =>
         {
-            entity.HasKey(e => e.PlataformaID).HasName("PK__Platafor__B835678DCCCEAF96");
+            entity.HasKey(e => e.PlataformaID).HasName("PK__Platafor__B835678D36B379C3");
+
+            entity.ToTable("Plataforma");
 
             entity.Property(e => e.Nome)
                 .HasMaxLength(50)
                 .IsUnicode(false);
 
-            entity.HasMany(d => d.Jogo).WithMany(p => p.Plataforma)
+            entity.HasMany(d => d.Jogos).WithMany(p => p.Plataformas)
                 .UsingEntity<Dictionary<string, object>>(
                     "JogoPlataforma",
                     r => r.HasOne<Jogo>().WithMany()
@@ -128,16 +137,17 @@ public partial class Royal_GamesContext : DbContext
                     j =>
                     {
                         j.HasKey("PlataformaID", "JogoID");
+                        j.ToTable("JogoPlataforma");
                     });
         });
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.UsuarioID).HasName("PK__Usuario__2B3DE7984D3B9B4E");
+            entity.HasKey(e => e.UsuarioID).HasName("PK__Usuario__2B3DE798429610E5");
 
-            entity.ToTable(tb => tb.HasTrigger("trg_ExclusaoUsuario"));
+            entity.ToTable("Usuario", tb => tb.HasTrigger("trg_ExclusaoUsuario"));
 
-            entity.HasIndex(e => e.Email, "UQ__Usuario__A9D105347F04DA81").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Usuario__A9D1053475939B9B").IsUnique();
 
             entity.Property(e => e.Email)
                 .HasMaxLength(150)

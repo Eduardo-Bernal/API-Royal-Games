@@ -131,6 +131,29 @@
             "description": "OK"
           }
         }
+<<<<<<< HEAD
+=======
+      },
+      "delete": {
+        "tags": [
+          "Jogo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+>>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
       }
     },
     "/api/Jogo/{id}": {
@@ -172,7 +195,11 @@
           }
         }
       },
+<<<<<<< HEAD
       "post": {
+=======
+      "put": {
+>>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
         "tags": [
           "Jogo"
         ],
@@ -247,6 +274,7 @@
             "description": "OK"
           }
         }
+<<<<<<< HEAD
       },
       "delete": {
         "tags": [
@@ -268,6 +296,8 @@
             "description": "OK"
           }
         }
+=======
+>>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
       }
     },
     "/api/Jogo/{id}/imagem": {
@@ -574,11 +604,14 @@
             "type": "string",
             "nullable": true
           },
+<<<<<<< HEAD
           "imagem": {
             "type": "string",
             "format": "byte",
             "nullable": true
           },
+=======
+>>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
           "statusJogo": {
             "type": "boolean",
             "nullable": true
@@ -610,6 +643,13 @@
           "usuarioEmail": {
             "type": "string",
             "nullable": true
+<<<<<<< HEAD
+=======
+          },
+          "statusUsuario": {
+            "type": "boolean",
+            "nullable": true
+>>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
           }
         },
         "additionalProperties": false

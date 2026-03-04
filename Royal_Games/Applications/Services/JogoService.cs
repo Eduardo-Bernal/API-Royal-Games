@@ -74,7 +74,11 @@ namespace Royal_Games.Applications.Services
         {
             ValidarCadastro(jogoDto);
 
+<<<<<<< HEAD
             if (_repository.NomeExiste(jogoDto.Nome))
+=======
+            if(_repository.NomeExiste(jogoDto.Nome))
+>>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
             {
                 throw new DomainException("Jogo já existe");
             }
@@ -82,7 +86,11 @@ namespace Royal_Games.Applications.Services
             Jogo jogo = new Jogo
             {
                 Nome = jogoDto.Nome,
+<<<<<<< HEAD
                 Preco = jogoDto.Preco,
+=======
+                Preco =jogoDto.Preco,
+>>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
                 Descricao = jogoDto.Descricao,
                 Imagem = ImagemParaBytes.ConverterImagem(jogoDto.Imagem),
                 StatusJogo = true,

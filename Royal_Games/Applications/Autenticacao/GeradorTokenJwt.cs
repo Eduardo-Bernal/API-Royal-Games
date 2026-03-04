@@ -46,7 +46,7 @@ namespace Royal_Games.Applications.Autenticacao
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-       
+
 
 
     }
