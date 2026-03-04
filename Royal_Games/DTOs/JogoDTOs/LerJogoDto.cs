@@ -9,8 +9,6 @@
 
         public string Descricao { get; set; } = null!;
 
-        public byte[] Imagem { get; set; } = null!;
-
         public bool? StatusJogo { get; set; }
 
         public List<int> GeneroIds { get; set; } = new();

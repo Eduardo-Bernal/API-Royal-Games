@@ -192,7 +192,7 @@
           }
         }
       },
-      "post": {
+      "put": {
         "tags": [
           "Jogo"
         ],
@@ -571,11 +571,6 @@
           },
           "descricao": {
             "type": "string",
-            "nullable": true
-          },
-          "imagem": {
-            "type": "string",
-            "format": "byte",
             "nullable": true
           },
           "statusJogo": {

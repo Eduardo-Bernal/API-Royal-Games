@@ -117,7 +117,7 @@
     "ContainingType": "Royal_Games.Controllers.JogoController",
     "Method": "Atualizar",
     "RelativePath": "api/Jogo/{id}",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [

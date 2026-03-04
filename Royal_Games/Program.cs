@@ -1,10 +1,15 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Royal_Games.Applications.Autenticacao;
 using Royal_Games.Applications.Services;
 using Royal_Games.Contexts;
 using Royal_Games.Interfaces;
 using Royal_Games.Repositories;
+using System;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,6 +57,48 @@ builder.Services.AddScoped<JogoService>();
 builder.Services.AddScoped<GeradorTokenJwt>();
 builder.Services.AddScoped<AutenticacaoService>();
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+
+    // Adiciona o suporte para autenticação usando JWT.
+    .AddJwtBearer(options =>
+    {
+
+        var chave = builder.Configuration["Jwt:Key"]!;
+
+
+        var issuer = builder.Configuration["Jwt:Issuer"]!;
+
+
+        var audience = builder.Configuration["Jwt:Audience"]!;
+
+
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+
+            ValidateIssuer = true,
+
+
+            ValidateAudience = true,
+
+
+            ValidateLifetime = true,
+
+
+            ValidateIssuerSigningKey = true,
+
+
+            ValidIssuer = issuer,
+
+
+            ValidAudience = audience,
+
+
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(chave)
+            )
+        };
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -63,6 +110,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
