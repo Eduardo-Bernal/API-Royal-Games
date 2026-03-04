@@ -19,7 +19,7 @@ namespace Royal_Games.Applications.Services
 
         public List<LerJogoDto> Listar()
         {
-            List<Jogo> jogos = _repository.Listar() ?? new List<Jogo>();
+            List<Jogo> jogos = _repository.Listar();
             List<LerJogoDto> jogosDto = jogos.Select(JogoParaDto.ConverterParaDto).ToList();
             return jogosDto;
         }
@@ -59,11 +59,11 @@ namespace Royal_Games.Applications.Services
             }
         }
 
-            public byte[] ObterImagem(int id)
+        public byte[] ObterImagem(int id)
         {
             var Imagem = _repository.ObterImagem(id);
 
-            if(Imagem == null || Imagem.Length == 0)
+            if (Imagem == null || Imagem.Length == 0)
             {
                 throw new DomainException("Imagem não encontrada");
             }
@@ -74,11 +74,7 @@ namespace Royal_Games.Applications.Services
         {
             ValidarCadastro(jogoDto);
 
-<<<<<<< HEAD
             if (_repository.NomeExiste(jogoDto.Nome))
-=======
-            if(_repository.NomeExiste(jogoDto.Nome))
->>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
             {
                 throw new DomainException("Jogo já existe");
             }
@@ -86,11 +82,7 @@ namespace Royal_Games.Applications.Services
             Jogo jogo = new Jogo
             {
                 Nome = jogoDto.Nome,
-<<<<<<< HEAD
                 Preco = jogoDto.Preco,
-=======
-                Preco =jogoDto.Preco,
->>>>>>> a4163a5d20d366d5f0dad022684a82a90d6272c7
                 Descricao = jogoDto.Descricao,
                 Imagem = ImagemParaBytes.ConverterImagem(jogoDto.Imagem),
                 StatusJogo = true,
@@ -98,10 +90,7 @@ namespace Royal_Games.Applications.Services
             };
 
             _repository.Cadastrar(jogo, jogoDto.generoIds);
-
-            Jogo jogoCompleto = _repository.ObterPorID(jogo.JogoID);
-
-            return JogoParaDto.ConverterParaDto(jogoCompleto);
+            return JogoParaDto.ConverterParaDto(jogo);
         }
 
         public LerJogoDto Atualizar(int id, AtualizarJogoDto jogoDto)
@@ -110,11 +99,11 @@ namespace Royal_Games.Applications.Services
 
             Jogo jogoBanco = _repository.ObterPorID(id);
 
-            if(jogoBanco == null)
+            if (jogoBanco == null)
             {
                 throw new DomainException("Jogo não encontrado.");
             }
-            if(_repository.NomeExiste(jogoDto.Nome, JogoIdAtual:id))
+            if (_repository.NomeExiste(jogoDto.Nome, JogoIdAtual: id))
             {
                 throw new DomainException("Já existe outro produto com esse nome");
             }
@@ -122,7 +111,7 @@ namespace Royal_Games.Applications.Services
             {
                 throw new DomainException("Jogo deve ter ao menos um genero.");
             }
-            if(jogoDto.Preco < 0)
+            if (jogoDto.Preco < 0)
             {
                 throw new DomainException("O preço do jogo deve ser maior que 0.");
             }
@@ -131,11 +120,11 @@ namespace Royal_Games.Applications.Services
             jogoBanco.Preco = jogoDto.Preco;
             jogoBanco.Descricao = jogoDto.Descricao;
 
-            if(jogoDto.Imagem != null && jogoDto.Imagem.Length > 0)
+            if (jogoDto.Imagem != null && jogoDto.Imagem.Length > 0)
             {
                 jogoBanco.Imagem = ImagemParaBytes.ConverterImagem(jogoDto.Imagem);
             }
-            if(jogoDto.StatusJogo.HasValue)
+            if (jogoDto.StatusJogo.HasValue)
             {
                 jogoBanco.StatusJogo = jogoDto.StatusJogo;
             }
@@ -148,7 +137,7 @@ namespace Royal_Games.Applications.Services
         {
             Jogo jogo = _repository.ObterPorID(id);
 
-            if(jogo == null)
+            if (jogo == null)
             {
                 throw new DomainException("Jogo não encontrado.");
             }
@@ -156,7 +145,7 @@ namespace Royal_Games.Applications.Services
             _repository.Remover(id);
         }
 
-        
-        
+
+
     }
 }
