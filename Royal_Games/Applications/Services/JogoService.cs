@@ -3,7 +3,6 @@ using Royal_Games.DTOs.JogoDTOs;
 using Royal_Games.Domains;
 using Royal_Games.Applications.Conversoes;
 using Royal_Games.Exceptions;
-using VHBurguer.Applications.Conversoes;
 using Royal_Games.Applications.Regras;
 
 namespace Royal_Games.Applications.Services
