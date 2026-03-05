@@ -57,6 +57,9 @@ builder.Services.AddScoped<JogoService>();
 builder.Services.AddScoped<GeradorTokenJwt>();
 builder.Services.AddScoped<AutenticacaoService>();
 
+builder.Services.AddScoped<IGeneroRepository, GeneroRepository>();
+builder.Services.AddScoped<GeneroService>();
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
     // Adiciona o suporte para autenticação usando JWT.

@@ -20,8 +20,8 @@ namespace VHBurguer.Applications.Conversoes
                 Generos = jogo.Generos.Select(genero => genero.Nome).ToList(),
 
                 UsuarioID = jogo.UsuarioID,
-                UsuarioEmail = jogo.Usuario?.Email,
-                UsuarioNome = jogo.Usuario?.Nome
+                UsuarioEmail = jogo.Usuario.Email,
+                UsuarioNome = jogo.Usuario.Nome
             };
         }
     }

@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Repositories\NovaPasta\**" />
+    <Content Remove="Repositories\NovaPasta\**" />
+    <EmbeddedResource Remove="Repositories\NovaPasta\**" />
+    <None Remove="Repositories\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.24" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.24" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.23" />
