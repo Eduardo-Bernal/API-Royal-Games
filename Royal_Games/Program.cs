@@ -60,6 +60,9 @@ builder.Services.AddScoped<AutenticacaoService>();
 builder.Services.AddScoped<ILogAlteracaoJogoRepository, LogAlteracaoJogoRepository>();
 builder.Services.AddScoped<LogAlteracaoJogoService>();
 
+builder.Services.AddScoped<IPlataformaRepository, PlataformaRepository>();
+builder.Services.AddScoped<PlataformaService>();
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
     // Adiciona o suporte para autenticação usando JWT.
