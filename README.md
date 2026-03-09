@@ -28,19 +28,19 @@ O projeto segue uma arquitetura organizada por responsabilidades:
 
 Royal_Games
 │
-├── Applications     → Regras de aplicação e serviços
-├── Contexts         → Configuração de banco de dados
-├── Controllers      → Endpoints da API
-├── DTOs             → Objetos de transferência de dados
-├── Domains          → Entidades e regras de negócio
-├── Exceptions       → Tratamento de exceções
-├── Interfaces       → Contratos da aplicação
-├── Properties       → Configurações do projeto
-├── Repositories     → Acesso e manipulação de dados
-│
-├── Program.cs
-├── appsettings.json
-└── Royal_Games.csproj
+├── Applications     → Regras de aplicação e serviços  
+├── Contexts         → Configuração de banco de dados  
+├── Controllers      → Endpoints da API  
+├── DTOs             → Objetos de transferência de dados  
+├── Domains          → Entidades e regras de negócio  
+├── Exceptions       → Tratamento de exceções  
+├── Interfaces       → Contratos da aplicação  
+├── Properties       → Configurações do projeto  
+├── Repositories     → Acesso e manipulação de dados  
+│  
+├── Program.cs  
+├── appsettings.json  
+└── Royal_Games.csproj  
 
 Essa estrutura permite:
 
