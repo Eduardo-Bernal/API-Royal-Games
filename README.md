@@ -26,8 +26,8 @@ Este projeto foi desenvolvido utilizando boas práticas de desenvolvimento em .N
 
 O projeto segue uma arquitetura organizada por responsabilidades:
 
-Royal_Games
-│
+Royal_Games  
+│  
 ├── Applications     → Regras de aplicação e serviços  
 ├── Contexts         → Configuração de banco de dados  
 ├── Controllers      → Endpoints da API  
